@@ -4,37 +4,30 @@ ini_set("display_errors", 1);
 
 function exe1(){
   echo "<table>";
-  echo "<tr>";
-  for ($a=0; $a <101 ; $a++)
+  for ($i=0; $i <101 ; $i++)
   {
-    if ($a == 0)
-    {
-      echo " ";
-    }
-    else
-    {
-      echo "<td>".$a."</td>";
-    }
-  }
-  for ($i=0; $i < 101; $i++)
-  {
+    echo "<tr>";
     for ($j=0; $j < 101; $j++)
     {
-      if ($j==0)
+      if ($i==0&&$j==0)
       {
-        echo "<tr><td>".$i."</td>";
+        echo "<td> </td>";
       }
-      if ($j==100)
+      else if ($i==0)
       {
-        echo "<td>".$i*$j."</td></tr>";
+        echo "<th>".$j."</th>";
+      }
+      else if ($j==0)
+      {
+        echo "<th>".$i."</th>";
       }
       else
       {
         echo "<td>".$i*$j."</td>";
       }
     }
+      echo "</tr>";
   }
-  echo "</tr>";
   echo "</table>";
 }
 
