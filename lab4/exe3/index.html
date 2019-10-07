@@ -1,0 +1,62 @@
+
+<html >
+  <head>
+    <title>exe3</title>
+    <link rel="stylesheet" href="exe3.css" type="text/css"/>
+    <script type="text/javascript" src="exe3.js">
+    </script>
+  </head>
+  <body>
+    <form onsubmit="return check()" action="exe3.php" method="post">
+      <h1>fruit shop</h1><br>
+      <div class="item">
+        <table>
+          <tr>
+            <th>fruit</th>
+            <th>price</th>
+            <th>number</th>
+          </tr>
+          <tr>
+            <td>apple</td>
+            <td>1.0</td>
+            <td><input type="number" name="Anum" id="Anum"></td>
+          </tr>
+          <tr>
+            <td>banana</td>
+            <td>2.0</td>
+            <td><input type="number" name="Bnum" id="Bnum"></td>
+          </tr>
+          <tr>
+            <td>lemon</td>
+            <td>3.0</td>
+            <td><input type="number" name="Lnum" id="Lnum"></td>
+          </tr>
+        </table>
+      </div>
+      <h2>shopping types</h2>
+      <div class="shopping">
+        <input type="radio" name="shopping" value="0">Free 7 day <br>
+        <input type="radio" name="shopping" value="50">$50.00 over night <br>
+        <input type="radio" name="shopping" value="5">$5.00 three day<br>
+      </div>
+      <h3>login in</h3>
+      <div class="account">
+
+          <tr>
+            <td>Username</td><br>
+          </tr>
+          <tr>
+            <td><input type="text" id="username"></td><br>
+          </tr>
+          <tr>
+            <td>Password</td><br>
+          </tr>
+          <tr>
+            <td><input type="text" name="password" id="password"></td><br>
+          </tr>
+      </div>
+      <button type="reset" >Reset</button>
+      <button type="submit" >submit</button>
+    </form>
+  </body>
+</html>
