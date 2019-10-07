@@ -1,34 +1,32 @@
  <?php
-$q1= $_POST["q1"];
-$q2= $_POST["q2"];
-$q3= $_POST["q3"];
-$q4= $_POST["q4"];
-$q5= $_POST["q5"];
-function score()
-{ $a=0
-  if ($q1==2)
+$q1 = $_POST["q1"];
+$q2 = $_POST["q2"];
+$q3 = $_POST["q3"];
+$q4 = $_POST["q4"];
+$q5 = $_POST["q5"];
+$a=0;
+
+  if ($q1=="2")
   {
-    $a++;
+    $a=$a+20;
   }
-  if ($q2==3)
+  if ($q2=="3")
   {
-    $a++;
+    $a=$a+20;
   }
-  if ($q3==500)
+  if ($q3=="500")
   {
-    $a++;
+    $a=$a+20;
   }
-  if ($q4==1100)
+  if ($q4=="1100")
   {
-    $a++;
+    $a=$a+20;
   }
-  if ($q5==2000)
+  if ($q5=="2000")
   {
-    $a++;
+    $a=$a+20;
   }
-  $x=($a/5)*100;
-  echo "your score:".$x."%<br>";
-}
+
 echo "Question 1: 1+1=?<br>";
 echo "You answered:".$q1."<br>";
 echo "Correct answer: 2<br>";
@@ -49,5 +47,5 @@ echo "Question 5: 4300-2300=?<br>";
 echo "You answered:".$q5."<br>";
 echo "Correct answer: 2000<br>";
 echo "<br>";
-score();
+echo "your score:".$a."%<br>";
   ?>
